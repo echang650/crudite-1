@@ -2,32 +2,49 @@
 <html>
   <head>
     <title>My CrUDdy App</title>
-    <!--
-    TODO
-    add link to css
-    add link to our app
-    -->
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.js"
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   </head>
-  <body>
-    <div class="container">
 
-          <input class="input-field-title" type="text" placeholder="Enter the Title">
-          <textarea class="input-field-body" placeholder="Enter the content"></textarea> <!-- maybe switch to <div id='fake_textarea' contenteditable></div>-->
-          <button class="store-btn">store data</button>
-          <button class="get-btn">get data</button>
-          <button class="delete-btn">delete data</button>
+  <body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button class="home">Home</button>
+      </div>
+    </nav>
+
+    <div class="container">
+<!-- 
+          <input class="input-field-title" type="text" placeholder="Enter the title">
+          <textarea class="input-field-body" placeholder="Enter the content"></textarea>  --><!-- maybe switch to <div id='fake_textarea' contenteditable></div>-->
+          <button class="store-btn">Store data</button>
+          <button class="get-btn">Get data</button>
+          <button class="delete-btn">Delete data</button>
 
       <div class="item-display">
 
       </div>
     </div>
+
+ <!-- Inline Form-->
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="input-field-title">Name</label>
+      <input type="text" class="form-control" id="input-field-title" placeholder="Enter the title">
+    </div>
+    <div class="form-group">
+      <label for="input-field-body">Email</label>
+      <input type="email" class="form-control" id="input-field-body" placeholder="Enter the content">
+    </div>
+    <button type="submit" class="btn btn-default">Send invitation</button>
+  </form>
 
   </body>
 </html>

@@ -14,8 +14,8 @@ $(document).ready(function(){
   // });
 
   $('.store-btn').on('click', function(event){
-    let titleValue = $('.input-field-title').val();
-    let contentValue = $('.input-field-body').val();
+    let titleValue = $('#input-field-title').val();
+    let contentValue = $('#input-field-body').val();
     localStorage.setItem('titleValue', titleValue);
     localStorage.setItem('contentValue', contentValue);
 

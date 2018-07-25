@@ -1,3 +1,10 @@
+.home {
+  position: relative;
+  color: black ;
+  border: 2px solid black;
+  right: 46%;
+}
+
 .container {
     display:flex;
     justify-content: center;
@@ -6,6 +13,10 @@
 
 .item-display {
     flex-grow: 1;
+}
+
+.form-inline {
+  position: relative;
 }
 
 button {
@@ -23,12 +34,18 @@ button:after {
     background-color: red;
 }
 
-.input-field-title {
-
-    text-align: left;
-    height: 50px;
+body {
+   background: linear-gradient(to right, white, gray, blue, blue); 
 }
 
-.input-field-body {
-    font-size: 25px;
+#input-field-title {
+    text-align: left;
+    width: 405px;
+    height: 20px;
+}
+
+#input-field-body {
+    text-align: left;
+    width: 405px;
+    height: 20px;
 }
